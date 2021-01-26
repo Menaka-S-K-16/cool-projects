@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+</head>
+<body>
+    <!--Question 1
+By how many ways we can access elements in the DOM and write about them in brief? -->
+<p>
+ There are four ways to access elements in the DOM,</br>
+ 1) getElementById - It uniquely identifies the element, iit return particular specified element and no two or more elements should have same id name.</br>
+ 2) getElementsByClassName - It returns array of elements more than one element can have same class name.<br>
+ 3) getElementsByTagName - It return the array of specified elements based on tag name</br>
+ 4) getElementsByName -select array of elements based on the name.</p></br>
+
+</p>
+<!-- Question 2
+Write a javascript program that will take 2 numbers from the HTML page and display them on the
+HTML page after the addition of those 2 numbers.-->
+
+    <label>Enter First Number</label><input type="text" id="number1" value="" required/>
+</br>
+    <label>Enter Second Number</label><input type="text" id="number2" value="" required/>
+</br>
+    <button onclick="addition()">Add</button><input type="text" id="result"/>
+<script>
+    function addition()
+    {
+        var a=document.getElementById("number1").value;
+        var b=document.getElementById("number2").value;
+        var c=parseInt(a)+parseInt(b);
+        document.getElementById("result").value=c;
+    }
+</script>
+</body>
+</html>
